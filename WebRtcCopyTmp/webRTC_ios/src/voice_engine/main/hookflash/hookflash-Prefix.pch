@@ -1,0 +1,21 @@
+//
+// Prefix header for all source files of the 'hookflash' target in the 'hookflash' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iPhone SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+
+    #define RGB(r,g,b,a)  [UIColor colorWithRed:(double)(r)/255.0f \
+    green:(double)(g)/255.0f \
+    blue:(double)(b)/255.0f \
+    alpha:(double)(a)]
+
+
+#endif
